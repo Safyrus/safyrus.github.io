@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "LOG.TXT"
+date:   0000-01-01 00:00:00 +00:01
+---
+
+```console?error=ERROR:
+/ > SHOW {{page.title}}
+ERROR: Date Corrupted
+PRINTING {{page.title}}
+```
+
+------------------------------
+
+## LOG
+
+\[XXXX-XX-XX:XX-XX\]: OS Stared
+\[XXXX-XX-XX:XX-XX\]: User **4%H+!$#2** Connected
+\[XXXX-XX-XX:XX-XX\]: Device with ID $0A52 connected on port P04
+\[XXXX-XX-XX:XX-XX\]: Reading from P04
+\[XXXX-XX-XX:XX-XX\]: Added **CORRUPTED** file into disk
+\[XXXX-XX-XX:XX-XX\]: Added **CORRUPTED** file into disk
+\[XXXX-XX-XX:XX-XX\]: Writing to P04
+\[XXXX-XX-XX:XX-XX\]: Device removed from port P04
+\[XXXX-XX-XX:XX-XX\]: User **4%H*!$#2** Deconnected
+\[XXXX-XX-XX:XX-XX\]: OS Stop
+
+------------------------------
+
+```console?error=ERROR:
+CLOSING {{page.title}}
+
+/ > LINK
+```
+
+- [HOME](/)
+
+```console?error=ERROR:
+/ > _
+```
