@@ -1,7 +1,6 @@
 title: Safyrus's homepage
 description: >- # this means to ignore newlines until "baseurl:"
   This is a very interesting description
-baseurl: ""
 url: "https://safyrus.github.io"
 github_username: safyrus
 author: Safyrus
