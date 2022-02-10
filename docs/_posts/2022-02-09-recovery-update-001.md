@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "RECOVERY-UPDATE-001"
-date:   2022-02-09 00:00:00 +00:01
+date:   2022-02-09 00:00:00
 ---
 
 {% include file-start.md %}
