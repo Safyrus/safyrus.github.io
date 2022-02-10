@@ -11,7 +11,9 @@ plugins:
 
 # Theme settings
 header_pages:
-  - index.markdown
+  - index.md
+  - help.md
+  - projects.md
 style: dark
 footer: 'RECOVERY MODE'
 

@@ -11,12 +11,6 @@ ERROR: File Name Corrupted
 ERROR: File Data Corrupted
 CANNOT PRINT "/!\\ CORRUPTED /!\\"
 CLOSING "/!\\ CORRUPTED /!\\"
-
-/ > LINK
 ```
 
-- [HOME](/)
-
-```console?error=ERROR:
-/ > _
-```
+{% include file-end.md %}
