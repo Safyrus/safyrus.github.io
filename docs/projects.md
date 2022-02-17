@@ -18,11 +18,13 @@ VGhpcyBpcyBhIHNpbXVsYXRpb24gb2YgYSBjb21wdXRlciBjb21wbGV0ZWx5IGRlc2lnbmVkIGFuZCBl
 
 [Project link](/404.html)
 
-### J1JlZmxlY3Rpb24nIE5FUyBMaWdodCBQdXp6bGUgR2FtZQ==
+### **Reflexion** a NES Puzzle Game about light
 
-J1JlZmxleGlvbicgaXMgYSBORVMgcHV6emxlIGdhbWUgYWJvdXQgZGlyZWN0aW5nIGJlYW1zIG9mIGxpZ2h0IHdpdGggbWlycm9ycyBhbmQgb3RoZXIgc3R1ZmY=
+![Reflexion logo](/img/reflexion-logo.png)
 
-[Project link](/404.html)
+**Reflexion** is a NES puzzle game about directing beams of light with mirrors and other stuff
+
+[Project link](/project/nes-light-puzzle-game)
 
 ### NES Boilerplate Project
 
