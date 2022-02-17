@@ -16,17 +16,17 @@ The game is still in development and many levels will be added, some will be cha
 
 ### Game screenshots
 
-![Reflexion menu](/img/Reflexion_menu.png)
+![Reflexion menu](/img/reflexion_menu.png)
 
-![Reflexion 001](/img/Reflexion_001.png)
+![Reflexion 001](/img/reflexion_001.png)
 
-![Reflexion 001 win](/img/Reflexion_001_win.png)
+![Reflexion 001 win](/img/reflexion_001_win.png)
 
-![Reflexion 003](/img/Reflexion_003.png)
+![Reflexion 003](/img/reflexion_003.png)
 
-![Reflexion 011 loose](/img/Reflexion_011_loose.png)
+![Reflexion 011 loose](/img/reflexion_011_loose.png)
 
-![Reflexion 015](/img/Reflexion_015.png)
+![Reflexion 015](/img/reflexion_015.png)
 
 ### **Sources**
 
