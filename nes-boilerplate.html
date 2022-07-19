@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>NES Boilerplate Project</title>
+    <link rel='stylesheet' href='css/nes-boilerplate.css'>
+</head>
+
+<body>
+    <h1>NES Boilerplate Project</h1>
+    <p>This is a default NES project to start with an already working and programmable game (in ASM or C).</p>
+
+    <h2>Features</h2>
+    <p>
+        This project has/can:
+    <ul>
+        <li>Compile the game from assembly code.</li>
+        <li>Compile the game from c code.</li>
+        <li>A reset handler that reset memory to 0 and call the main function.</li>
+        <li>A general NMI handler to draw stuff on the screen.</li>
+        <li>An IRQ handler (that does nothing, but we need one).</li>
+        <li>Support for the FamiStudio Sound Engine (<a href="https://famistudio.org">https://famistudio.org</a>)</li>
+        <li>Some defined constant (PPU, APU, etc.).</li>
+    </ul>
+    </p>
+
+    <h2>Example</h2>
+
+    <p>By default, the game play an animation with moving background tiles, a sprite and a little music to show that the
+        game is working correctly.</p>
+    <img src="img/nes-boilerplate.gif" alt="nes-boilerplate" width="480">
+
+    <h2>Source</h2>
+    <p>
+        You can find the project sources here: (<a href="https://github.com/Safyrus/NES-Boilerplate-Game">NES Boilerplate Game</a>)<br>
+        Explanation of how to configure the game to your needs is explained there.
+    </p>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
