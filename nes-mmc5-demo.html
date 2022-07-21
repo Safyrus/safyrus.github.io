@@ -4,18 +4,95 @@
 <head>
     <meta charset='utf-8'>
     <title>NES MMC5 Demo</title>
-    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/mmc5-demo.css'>
 </head>
 
 <body>
     <h1>NES MMC5 Demo</h1>
+    <img src="img/MMC5_Demo_a_v3.gif" alt="MMC5_Demo_a_v3" width="480">
     <p>
-        This is a NES demo made with the MMC5 mapper with the goal to push what the NES is capable of.
+        This is a NES demo made using the MMC5 mapper with the goal to push what the NES is capable of.
+    </p>
+
+    <h2>Download and Sources</h2>
+    <p>
+        You can find the source repository here: <a href="https://github.com/Safyrus/NES-MMC5-Demo">GitHub</a>
+        And you can download the game here : <a href="res/MMC5_Demo_v_0.3.0.nes">MMC5 Demo v0.3.0</a>
     </p>
 
     <h2>Features</h2>
 
+    <p>
+        This demo has multiple systems running in the background. It can:
+    <ul>
+        <li><a href="#modules">Run multiple "module" by priority</a> </li>
+        <li><a href="#scrolling">Scrolling</a> </li>
+        <li><a href="#loading">Object level loading</a> </li>
+        <li><a href="#drawing">Level drawing</a> </li>
+        <li><a href="#entities">Entities Action</a> </li>
+        <li><a href="#collision">Collision System</a> </li>
+        <li><a href="#player">Player movement</a> </li>
+    </ul>
+    </p>
+
+    <h3 id="modules">Run multiple "module" by priority</h3>
+    <p>
+        A module is a task located in a ROM bank that is executed by the main function.<br>
+        The main function will find the module with the highest priority to execute next.<br>
+        When the module at ended, the main function will find a new module to run or wait for the next frame if there is no more modules.<br>
+        If a module had not ended when the next frame occurred, it is paused.<br>
+        The main function will resume it when newer modules of higher priority had been completed.<br>
+        Some modules are special and are executed every frame before any other modules.
+    </p>
+
+    <h3 id="scrolling">Scrolling</h3>
+    <p>
+        The game can be scrolled in any 4 directions (but not diagonally) and is only using 1 PPU screen map to all 4 nametables.
+    </p>
+
+    <h3 id="loading">Object Level Loading</h3>
+    <p>
+        Levels can be loaded into RAM.<br>
+        Each level is made of screens and can as large as 16*16 screens.<br>
+        Screens contains the objects and can take up to 256 bytes (an object is 1-4 bytes).<br>
+        Levels and screens are contained into a world up to a maximum of 256 levels and 256 screens.<br>
+        Only 1 level and 9 decompressed screens of this level are loaded in the RAM.
+    </p>
+
+    <h3 id="drawing">Level drawing</h3>
+    <p>
+        The current level is rendered based on the scroll position and the tiles inside the 9 screens buffer.<br>
+        It will fetch tiles data as the scroll progress and load new screens into the buffers.
+    </p>
+
+    <h3 id="entities">Entities Action </h3>
+    <p>
+        Entities can be loaded from the level (only global entities for now) and each entity will call its action function to do stuff.<br>
+        For example, the player entity call the function to scroll around the level.
+    </p>
+
+    <h3 id="collision">Collision System </h3>
+    <p>
+        Each tile of the level have a collision or not based on its index (for each 4K CHR bank the first half don't have collisions and the other half have)
+    </p>
+
+    <h3 id="player">Player movement</h3>
+    <p>
+        The player can move, and its animation changed depending on the direction. <br>
+        It can collide with tiles and make the game scroll and stop at the level border.
+    </p>
+
+    <h2>Level</h2>
+    <img src="img/NES-demo-level.png" alt="NES-demo-level" width="480">
+    <p>
+        This is the concept of the current (and only) level. <br>
+        Note that some tiles on the image may be not correct because the real level place some tiles randomly (like flowers) and some object may have changed since then. <br>
+    </p>
+
     <h2>Control</h2>
+    <p>
+        There is only one type of control for now, you can control the player with the directional pad.
+    </p>
 
     <footer>
     </footer>
