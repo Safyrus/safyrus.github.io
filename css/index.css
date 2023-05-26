@@ -35,6 +35,30 @@ body {
     font-weight: 400;
 }
 
+.scan-line {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 2px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: scanning 10s infinite;
+    animation-timing-function: linear;
+    pointer-events: none;
+}
+
+@keyframes scanning {
+    0% {
+        transform: translateY(0vh);
+    }
+    90% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
 .overlay {
     background: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%);
     background-size: 1000px 2px;
