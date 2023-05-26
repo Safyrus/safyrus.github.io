@@ -17,9 +17,16 @@ body {
     font-weight: 400;
 }
 
-.app {
-    background: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%) no-repeat fixed;
+.overlay {
+    background: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%);
     background-size: 1000px 2px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
 }
 
 .title {
@@ -49,7 +56,36 @@ body {
 
 p, a {
     color: var(--text-color);
+}
+
+p {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link {
     font-size: 1.25em;
+}
+
+.link:hover {
+    text-decoration: none;
+    border-top: var(--text-color) solid 2px;
+    border-bottom: var(--text-color) solid 2px;
+}
+
+.links {
+    width: fit-content;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-left: var(--text-color) solid 2px;
+    border-right: var(--text-color) solid 2px;
 }
 
 .content {
@@ -62,6 +98,7 @@ h2 {
     text-align: center;
     margin: 0 0 12px;
     border-bottom: var(--text-color) solid 2px;
+    text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);
 }
 
 article {
