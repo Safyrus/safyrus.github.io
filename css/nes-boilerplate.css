@@ -5,7 +5,7 @@
 
 html,
 body {
-    font-family: "PressStart2P";
+    font-family: "PressStart2P", monospace;
     background-color: black;
     text-align: center;
     color: white;
